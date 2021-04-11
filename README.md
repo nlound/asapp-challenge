@@ -40,4 +40,20 @@ $ npm run all
 
 The app will run on [http://localhost:3000](http://localhost:3000).
 
+---
+
+## UX issues and improvements
+
+- There is a the [Autocomplete](https://material-ui.com/components/autocomplete/) component on Material UI that could be implemented on this challenge. However I didn't want an OOTB solution.
+
+- There were so many cities that was impossible to load them all without freezing the browser so I decided to call the api with the input value filtering to a fixed ammount of results.
+
+- Since API was slow there was two options I evaluated to make the /cities call. I could use a debounce on the try catch block on the `handleChange` method on `SearchBar` componet but instead of loading another library (like [Loadash](https://lodash.com/)) I've decided to go that with plain JS using native methods `setTimeout` and `clearTimeout` to achieve a debounce alike behaviour.
+
+- I've taken out the proposed input placeholder outside the component for usability heuristic rule "recognition rather than recall". [Jakob Nielsen's 10 general principles for interaction design](https://www.nngroup.com/articles/ten-usability-heuristics/)
+
+- User cannot see cities already chosen. This is easily fixed using the [Autocomplete](https://material-ui.com/components/autocomplete/) component using the built in functionability of [tags](https://material-ui.com/components/autocomplete/#multiple-values).
+
+---
+
 Made by [Nicolás Lound](https://www.linkedin.com/in/nicolaslound/) with 💛
