@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# ASAPP Front End Challenge - City Picker UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## User Story
 
-## Available Scripts
+- The user will interact with the City Picker Interface in order to search for a specific city from a list provided by DataHub's Major cities of the world's API: https://datahub.io/core/world-cities.
 
-In the project directory, you can run:
+## How to use
 
-### `npm start`
+In order to install and run the app, please make sure you've installed:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Git](https://git-scm.com/),
+- [Node](https://nodejs.org/es/) v10.16.3 or LTS.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Clone this repository
 
-### `npm test`
+```bash
+$ git clone git@github.com:nlound/asapp-challenge.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Go inside the repository and to the API's folder in order to install API's dependencies
 
-### `npm run build`
+```bash
+$ cd asapp-challenge
+$ cd api
+$ npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Go back to the main folder, and install FE dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+$ cd ..
+$ npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### You're now ready to run the app!
 
-### `npm run eject`
+```bash
+$ npm run all
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The app will run on [http://localhost:3000](http://localhost:3000).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Made by [Nicolás Lound](https://www.linkedin.com/in/nicolaslound/) with 💛

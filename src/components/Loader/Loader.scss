@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.search_status {
+  display: flex;
+  align-items: center;
+  &--spinner {
+    display: block;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    margin: 8px;
+    border-radius: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: $asapp-gray lighten($asapp-gray, 25%) $asapp-gray
+      lighten($asapp-gray, 25%);
+    animation: rotation 1s linear infinite;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

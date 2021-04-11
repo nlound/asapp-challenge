@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.city_item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  &:not(:last-child) {
+    border-bottom: 1px solid $asapp-gray;
+  }
+
+  &--checkbox {
+    margin: 0px 15px;
+  }
+
+  &--name {
+    font-size: 16px;
+    color: $asapp-black;
+    margin: 0;
+    padding: 0;
+  }
+  &--description {
+    font-size: 14px;
+    color: $asapp-gray;
+    margin: 0;
+    padding: 0;
+  }
+}
